@@ -30,7 +30,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="bootstrapmb.com.js"></script>
     <script>
-        popToast("⚠️ 国内用户建议连接外网，以便获得更好的体验！", "info");
+        popToast("⚠️ 国内用户建议连接外网！", "info");
         function popToast(tipTxt) {
             var $popToast = $(".pop-toast");
             $popToast.remove();
@@ -41,7 +41,7 @@
             $("body").append($popToast);
             setTimeout(function () {
                 $popToast.fadeOut();
-            }, 20000);
+            }, 2000);
         }
     </script>
 </body>
