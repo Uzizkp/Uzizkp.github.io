@@ -30,7 +30,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="bootstrapmb.com.js"></script>
     <script>
-        popToast("⚠️ 国内用户建议连接外网！", "info");
+        popToast("⚠️ 自动跳转到首页，国内用户建议连接外网！", "info");
         function popToast(tipTxt) {
             var $popToast = $(".pop-toast");
             $popToast.remove();
@@ -42,6 +42,13 @@
             setTimeout(function () {
                 $popToast.fadeOut();
             }, 2000);
+            window.onload=function(){
+                    setTimeout(go, 3000);
+            };
+     
+            function go(){
+                location.href="http://zkpeace.com/blog-cn/home/";
+            }
         }
     </script>
 </body>
